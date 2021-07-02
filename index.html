@@ -1,33 +1,78 @@
 <html>
     <head>
         <link href="./stylesheet.css" rel="stylesheet"/>
+        <title>  ​﻿</title>
         <meta property="og:title" content="Business-Goose.Github.IO"/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://business-goose.github.io"/>
         <meta property="og:image" content="./card.png">
-        <meta name="theme-color" content=""
+        <meta name="theme-color" content="">
+        <script src="https://unpkg.com/@drum-n-bass/kinetics"></script>
+        <script>
+            const params = {
+                "particles": {
+                    "count": 1000,
+                    "sizes": {"min": 1.35, "max": 1.35},
+                    "sides": {"min": 4, "max": 4},
+                    "rotate": {"speed": 1, "direction": null},
+                    "mode": {
+                        "type": "space",
+                        "speed": 5,
+                    },
+                    "fill": { 
+                        "colors": ["#ffffff"], 
+                        "toColors": ["#ffffff"],
+                        "opacity": .3
+                    },
+                    "attract": {
+                        "chance": 1,
+                        "force": -1,
+                        "grow": .75,
+                        "size": null,
+                        "type": "static",
+                        "speed": 1.5,
+                        "direction": -1,
+                        "radius": 1
+                    }
+                }
+            };
+            document.addEventListener('DOMContentLoaded', function() {
+                const kinetics = new Kinetics(params).interactionHook();
+            });
+        </script>
     </head>
     <body>
-        <div id="card">
-            <div id="profile">
-                <img id="pfp" src="./me.png"/>
-                <hr>
-                <p>
-                    <a href="https://discord.com">Allink#9308</a>
-                    <a href="https://discord.com">woWzErS#6687</a>
-                    <a href="https://github.com/business-goose">business-goose</a>
-                </p>
+        <div id="cards">
+            <div id="card" data-kinetics-attraction>
+                <div class="text">
+                    <p>
+                        Hey, my name's Allink and I like to code. My favourite languages are Java and Node.JS. I know how to code in browser JavaScript, Python, C#, VB.NET, a bit of C and obviously HTML.
+                    </p>
+                    <p>
+                        In my free time I like to create Minecraft bots for a "Free-OP anarchy" Minecraft server. I sometimes also watch videos or play video games.
+                    </p>
+                </div>
+               
             </div>
-            <div id="text">
-                <p>
-                    Hey, my name's Allink and I like to code. My favourite languages are Java and Node.JS. I know how to code in browser JavaScript, Python, C#, VB.NET, a bit of C and obviously HTML.
-                </p>
-                <p>
-                    In my free time I like to create Minecraft bots for a "Free-OP anarchy" Minecraft server. I sometimes also watch videos or play video games.
-                </p>
+            <br>
+            <div id="social" data-kinetics-attraction>
+                <div class="text">
+                    <p>
+                        Discord:
+                        <ul>
+                            <li>Allink#9308</li>
+                            <li>怒江市#0001</li>
+                        </ul>
+                    </p>
+                    <p>
+                        Telegram -
+                        <a href="https://t.me/felonious_gru">
+                            Felonious Gru
+                        </a>
+                    </p>
+                </div>
+               
             </div>
-           
         </div>
-        
     </body>
 </html>

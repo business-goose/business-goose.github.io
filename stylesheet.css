@@ -1,45 +1,52 @@
-#pfp {
-    width: 20vh;
-    height: 20vh;
-    border-radius: 5vh;
-    margin: 5vh;
-    user-select: none;
-}
-
-#profile {
-    background-color: lightskyblue;
-    width: 30%;
-    padding-bottom: 10vh;
-}
-
-#text {
-    display: flex;
-    flex-direction: column;
-}
-
-#card {
-    margin: auto;
-    width: 100vh;
-    height: 50vh;
-    background-color: rgb(65, 65, 65);
-    color:white;
-    border-radius: 5vh;
-    flex-direction: row;
-    display: flex;
-    word-spacing: 0.5vh;
-}
-
+@import url("fonts/Roboto-Regular.ttf");
 body {
-    background-color: transparent;
-}
-
-p {
-    font-size: 3vh;
-    padding-right: 5vh;
-    padding-left: 5vh;
+    background-color: rgb(22, 22, 22);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    overflow: hidden;
 }
 
 a {
     color: white;
-    text-decoration: none;
+}
+
+#card {
+    display: flex;
+    width: 100vh;
+    height: 50vh;
+    padding: 3vh;
+    text-align: center;
+    background-color: rgba(10, 10, 10, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    user-select: none;
+}
+
+#social {
+    display: flex;
+    padding: 3vh;
+    height: 50vh;
+    text-align: center;
+    background-color: rgba(59, 89, 152, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    user-select: none;
+}
+
+#cards {
+    display:flex;
+    height:100vh;
+    align-items:center;
+
 }
