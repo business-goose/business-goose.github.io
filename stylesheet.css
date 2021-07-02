@@ -5,6 +5,19 @@ body {
     color: white;
     text-align: center;
     overflow: hidden;
+    user-select: none;
+}
+
+@media only screen and (max-device-width: 480px) {
+    body {
+        font-size: 2vh;
+    }
+}
+  
+@media only screen and (min-device-width: 481px) {
+    body {
+        font-size: 3vh;
+    }
 }
 
 a {
@@ -14,13 +27,11 @@ a {
 #card {
     display: flex;
     width: 100vh;
-    height: 50vh;
     padding: 3vh;
     text-align: center;
     background-color: rgba(10, 10, 10, 0.3);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    font-size: xx-large;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,16 +42,15 @@ a {
 #social {
     display: flex;
     padding: 3vh;
-    height: 50vh;
     text-align: center;
     background-color: rgba(59, 89, 152, 0.3);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    font-size: xx-large;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
+    text-overflow: ellipsis;
 }
 
 #cards {
